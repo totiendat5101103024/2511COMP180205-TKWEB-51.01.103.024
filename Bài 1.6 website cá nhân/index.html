@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background: whitesmoke;">
+    <nav id="bar" style="display: flex;align-items: center;position: relative;height: 200px;">
+        <a href="index.html" style="position: absolute;left: 0" target="_blank">
+            <img src="img/hcmue logo.png"
+                alt="HCMUE LOGO" style="width: 250px;">
+        </a>
+        <h1 style="font-size: 35px;color: #0c4874;text-align: center;margin: 0;width: 100%;">
+            TRƯỜNG ĐẠI HỌC SƯ PHẠM THÀNH PHỐ HỒ CHÍ MINH <br>
+            <span style="color: red">Ho Chi Minh City University of Education</span>
+        </h1>
+        <a href="https://fit.hcmue.edu.vn/vn/" style="position: absolute;right: 0;" target="_blank">
+            <img src="img/FIT HCMUE LOGO.png"
+                alt="FIT HCMUE LOGO" style="width: 200px;">
+        </a>
+    </nav>
+    <hr>
+    <div>
+        <h1 style="width: 100%;text-align: center;font-size: 50px">~ TRANG THÔNG TIN SINH VIÊN ~</h1>
+    </div>
+    <div id="Header" style="width: 100%;display:flex">
+        <div style="width: 50%;text-align: center;">
+            <h1 style="margin-bottom: 0px;margin-top: 20px;font-size: 60px;">TO TIEN DAT</h1>
+            <span style="font-size:20px">HCMUE</span>
+            <span> <b>|</b> </span>
+            <span style="font-size:20px;"><i>Computer Science Teacher Education</i></span> <br>
+            <img src="img/avatar.jpg" alt="avatar" style="width: 250px;border-radius: 50%;margin-top: 20px;">
+        </div>
+        <div style="width: 50%">
+            <table align="center" cellpadding="10">
+                <tr>
+                    <th colspan="2" style="font-size: 60px;">THIẾT KẾ WEB</th>
+                </tr>
+                <tr style="font-size: 30px;">
+                    <td>Mã học phần:</td>
+                    <td>2511COMP180105</td>
+                </tr>
+                <tr style="font-size: 30px;">
+                    <td>GV hướng dẫn:</td>
+                    <td>ThS. Võ Lê Phúc Hậu</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <ul style="margin-top: 80px;margin-bottom: 80px;list-style-type: none;">
+        <h2 style="font-size: 35px;">✨ Mời các bạn ấn vào tiêu đề bên dưới để xem chi tiết</h2>
+        <div style="font-size: 30px;margin-left: 50px;">
+            <li>👉
+                <a href="information.html">Trang Thông Tin Cá Nhân</a>
+            </li>
+        </div>
+    </ul>
+    <h2 style="width: 100%;text-align: center;font-size: 30px">GÓP Ý VỀ TRANG WEB</h2>
+    <form style="width: 700px;font-size: 25px;margin-left: auto;margin-right: auto;">
+        <fieldset>
+            <legend><i><b>THÔNG TIN</b></i></legend>
+            <div style="width: 100%;display: flex;">
+                <div style="width: 50%;">
+                    <span>Họ và tên</span> <br>
+                    <input type="text" name="name" placeholder="VD: Nguyễn Văn A">
+                </div>
+                <div style="width: 50%;">
+                    <span>MSSV</span> <br>
+                    <input type="text" name="mssv" placeholder="VD: 51.01.103.024">
+                </div>
+            </div>
+            <br>
+            <div style="width: 100%;display: flex">
+                <div style="width: 50%;">
+                    <span>Lớp</span> <br>
+                    <input type="text" name="class" placeholder="VD: Sư phạm Tin học B">
+                </div>
+                <div style="width: 50%">
+                    <span>Giới tính</span> <br>
+                    <input type="radio" name="gender" valued="Nam"> Nam
+                    <input type="radio" name="gender" valued="Nữ"> Nữ
+                    <input type="radio" name="gender" valued="Khác"> Khác
+                </div>
+            </div>
+            <br>
+            <div>
+                <span>Email</span> 
+                <input type="text" name="email" placeholder="VD: 5101103024@student.hcmue.edu.vn" style="width: 250px;">
+                <br><br>
+                <span>Bạn đến từ Tỉnh/Thành phố nào</span>
+                <select name="city">
+                    <option>Thành phố Hồ Chí Minh</option>
+                    <option>Hà Nội</option>
+                    <option>Đà Nẵng</option>
+                    <option>Huế</option>
+                    <option>Nha Trang</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <span>Nội dung muốn góp ý</span> <br>
+                <textarea name="comment" rows="20" cols="80" placeholder="Góp ý vào đây nhé" style="margin-top: 20px"></textarea>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <footer style="text-align: center;width: 100%;height: 50px;background: #0c4874;color: lightgray;font-size: 30px;">
+        <span><i>© Tô Tiến Đạt - 51.01.103.024</i></span>
+    </footer>
+</body>
+
+</html>
