@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Halloween</title>
+    <link rel="icon" type="image/x-icon" href="../img/Witch.ico">
+
+    <!-- Install Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Install Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&family=Special+Elite&display=swap"
+        rel="stylesheet">
+
+    <!-- Install jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Link to CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+
+<body>
+    <div class="jumpscare-vamprie"></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark halloween-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Pumpkin.ico" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Halloween
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">Lịch sử</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traditional.html">Truyền thống</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="shop.html">Cửa hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="register.html">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <div class="container">
+            <h1 class="page-title">Cửa Hàng Ma Quái</h1>
+            <p class="text-center mb-5" style="font-size: 1.2rem;">Nhấn vào một sản phẩm để xem chi tiết bên dưới!</p>
+
+            <div class="product-list">
+
+                <div class="product-item">
+                    <div class="product-header">
+                        <h3>Áo Thun Bí Ngô Tinh Xảo</h3>
+                        <span class="product-price">350.000 VNĐ</span>
+                    </div>
+                    <div class="product-details">
+                        <img src="../img/shirt.png" alt="Áo thun bí ngô">
+                        <p>Chất liệu cotton 100% thoáng mát với hình in bí ngô ma quái có thể phát sáng nhẹ trong bóng
+                            tối. Thích hợp cho các buổi tiệc đêm.</p>
+                        <a href="#" class="btn btn-buy mt-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-header">
+                        <h3>Trang Phục Xác Ướp</h3>
+                        <span class="product-price">620.000 VNĐ</span>
+                    </div>
+                    <div class="product-details">
+                        <img src="../img/xacuop.png" alt="Trang phục xác ướp">
+                        <p>Bộ trang phục xác ướp Ai Cập cổ đại được làm từ vải thô, tạo cảm giác cũ kỹ và chân thực. Gây
+                            ấn tượng mạnh trong mọi bữa tiệc.</p>
+                        <a href="#" class="btn btn-buy mt-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-header">
+                        <h3>Giỏ Kẹo Trick or Treat</h3>
+                        <span class="product-price">180.000 VNĐ</span>
+                    </div>
+                    <div class="product-details">
+                        <img src="../img/giokeo.png" alt="Giỏ kẹo">
+                        <p>Chiếc giỏ hình đầu lâu ngộ nghĩnh, đủ lớn để chứa đầy kẹo sau một đêm "đi săn". Vật phẩm
+                            không thể thiếu cho các bé.</p>
+                        <a href="#" class="btn btn-buy mt-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-header">
+                        <h3>Mô Hình Dơi Treo Cửa</h3>
+                        <span class="product-price">150.000 VNĐ</span>
+                    </div>
+                    <div class="product-details">
+                        <img src="../img/doitreocua.png" alt="Mô hình dơi">
+                        <p>Đàn dơi làm bằng nhựa dẻo, có thể uốn dẻo và treo ở cửa ra vào hoặc cửa sổ để tạo không khí
+                            rùng rợn ngay từ bên ngoài.</p>
+                        <a href="#" class="btn btn-buy mt-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-header">
+                        <h3>Đèn Lồng Bí Ngô</h3>
+                        <span class="product-price">250.000 VNĐ</span>
+                    </div>
+                    <div class="product-details">
+                        <img src="../img/denlong.png" alt="Đèn lồng bí ngô">
+                        <p>Chiếc đèn lồng hình bí ngô bí ẩn, sử dụng đèn LED màu cam tạo ánh sáng ấm áp nhưng không kém
+                            phần ma quái cho căn phòng.</p>
+                        <a href="#" class="btn btn-buy mt-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-header">
+                        <h3>Đèn trang trí ma la hét</h3>
+                        <span class="product-price">400.000 VNĐ</span>
+                    </div>
+                    <div class="product-details">
+                        <img src="../img/matreotuong.png" alt="ma la hét">
+                        <p>Một chiếc đèn trang trí ma la hét được treo trong nhà để tạo thêm không gian đậm chất
+                            Halloween.</p>
+                        <a href="#" class="btn btn-buy mt-2">Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

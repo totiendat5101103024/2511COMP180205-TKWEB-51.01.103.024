@@ -1,0 +1,222 @@
+body {
+    background-image: url(img/bg1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 0;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#change-background {
+    z-index: 1000;
+    padding: 10px 20px;
+    font-size: 3rem;
+    border-radius: 5px;
+}
+
+.Fish,
+.diver {
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.diver {
+    width: 150px;
+}
+
+#diver_1 {
+    animation-name: diver_1;
+    animation-duration: 15s;
+}
+
+#diver_2 {
+    animation-name: diver_2;
+    animation-duration: 20s;
+}
+
+#shark {
+    width: 250px;
+    animation-name: Shark;
+    animation-duration: 10s;
+}
+
+#turtle {
+    width: 200px;
+    animation-name: turtle;
+    animation-duration: 40s;
+}
+
+#turtle_nguoclai {
+    width: 200px;
+    animation-name: turtle_nguoclai;
+    animation-duration: 25s;
+}
+
+#goldFish {
+    width: 120px;
+    animation-name: goldFish;
+    animation-duration: 20s;
+}
+
+#goldFish_nguoclai {
+    width: 120px;
+    animation-name: goldFish_nguoclai;
+    animation-duration: 17s;
+}
+
+@keyframes diver_1 {
+    0% {
+        transform: translateX(-150px) translateY(15vh) scaleX(1);
+    }
+
+    49% {
+        transform: translateX(calc(100vw - 150px)) translateY(25vh) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 150px)) translateY(25vh) scaleX(-1);
+    }
+
+    99% {
+        transform: translateX(-150px) translateY(15vh) scaleX(-1);
+    }
+
+    100% {
+        transform: translateX(-150px) translateY(15vh) scaleX(1);
+    }
+}
+
+@keyframes diver_2 {
+    0% {
+        transform: translateX(100vw) translateY(40vh) scaleX(-1);
+    }
+
+    49% {
+        transform: translateX(-150px) translateY(50vh) scaleX(-1);
+    }
+
+    50% {
+        transform: translateX(-150px) translateY(50vh) scaleX(1);
+    }
+
+    99% {
+        transform: translateX(100vw) translateY(40vh) scaleX(1);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(40vh) scaleX(-1);
+    }
+}
+
+@keyframes turtle {
+    0% {
+        transform: translateX(-200px) translateY(70vh) scaleX(1);
+    }
+
+    49% {
+        transform: translateX(100vw) translateY(80vh) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(100vw) translateY(80vh) scaleX(-1);
+    }
+
+    99% {
+        transform: translateX(-200px) translateY(70vh) scaleX(-1);
+    }
+
+    100% {
+        transform: translateX(-200px) translateY(70vh) scaleX(1);
+    }
+}
+
+@keyframes turtle_nguoclai {
+    0% {
+        transform: translateX(100vw) translateY(30vh) scaleX(-1);
+    }
+
+    49% {
+        transform: translateX(-200px) translateY(35vh) scaleX(-1);
+    }
+
+    50% {
+        transform: translateX(-200px) translateY(35vh) scaleX(1);
+    }
+
+    99% {
+        transform: translateX(100vw) translateY(30vh) scaleX(1);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(30vh) scaleX(-1);
+    }
+}
+
+@keyframes Shark {
+    0% {
+        transform: translateX(-250px) translateY(85vh) scaleX(1);
+    }
+
+    49% {
+        transform: translateX(calc(100vw - 250px)) translateY(50vh) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 250px)) translateY(50vh) scaleX(-1);
+    }
+
+    99% {
+        transform: translateX(-250px) translateY(85vh) scaleX(-1);
+    }
+
+    100% {
+        transform: translateX(-250px) translateY(85vh) scaleX(1);
+    }
+}
+
+@keyframes goldFish {
+    0% {
+        transform: translateX(-120px) translateY(20vh) scaleX(1);
+    }
+
+    49% {
+        transform: translateX(100vw) translateY(80vh) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(100vw) translateY(80vh) scaleX(-1);
+    }
+
+    99% {
+        transform: translateX(-120px) translateY(20vh) scaleX(-1);
+    }
+
+    100% {
+        transform: translateX(-120px) translateY(20vh) scaleX(1);
+    }
+}
+
+@keyframes goldFish_nguoclai {
+    0% {
+        transform: translateX(100vw) translateY(40vh) scaleX(-1);
+    }
+
+    49% {
+        transform: translateX(-120px) translateY(35vh) scaleX(-1);
+    }
+
+    50% {
+        transform: translateX(-120px) translateY(35vh) scaleX(1);
+    }
+
+    99% {
+        transform: translateX(100vw) translateY(40vh) scaleX(1);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(40vh) scaleX(-1);
+    }
+}

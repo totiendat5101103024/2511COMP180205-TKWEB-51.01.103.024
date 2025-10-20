@@ -1,0 +1,107 @@
+body,
+html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+}
+
+.halloween-nav {
+    background-color: rgba(13, 13, 13, 0.85);
+    border-bottom: 1px solid #ff7518;
+}
+
+.halloween-nav .navbar-brand {
+    font-family: 'Creepster', cursive;
+    font-size: 1.8rem;
+    color: #ff7518;
+
+}
+
+.halloween-nav .nav-link {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+.halloween-nav .nav-link:hover,
+.halloween-nav .nav-link.active {
+    color: #ff7518;
+}
+
+.main-container {
+    min-height: 100vh;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('../img/halloween-bg-vertical.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-box {
+    position: relative;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ff7518;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.halloween-title {
+    font-family: 'Creepster', cursive;
+    font-size: 3rem;
+    color: #ff7518;
+}
+
+.halloween-subtitle {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* (History, Traditions) */
+.content-page {
+    color: #f0f0f0;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.97), rgba(13, 13, 13, 0.97)), url('../img/halloween-bg-horizontal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff7518;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.history-content h2 {
+    color: #ff7518;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        background-image: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)), url('../img/halloween-bg-horizontal.jpg');
+    }
+
+    .halloween-title {
+        font-size: 6rem;
+    }
+
+    .halloween-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 5rem;
+    }
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}

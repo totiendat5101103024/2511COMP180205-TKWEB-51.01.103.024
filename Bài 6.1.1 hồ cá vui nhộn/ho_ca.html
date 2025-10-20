@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá vui nhộn</title>
+
+    <!-- Install Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="mystyle.css"> <!-- Link to CSS-->
+
+    <!-- Script change background -->
+    <script>
+        const bg = [
+            'url("img/bg1.avif")',
+            'url("img/bg2.jpg")',
+            'url(img/bg3.avif)',
+        ];
+
+        let current_bg = 0;
+        
+        function changeBg() {
+            current_bg++;
+            if (current_bg >= bg.length) {
+                current_bg = 0;
+            }
+            document.body.style.backgroundImage = bg[current_bg];
+        }
+    </script>
+</head>
+
+<body>
+    <button id="change-background" onclick="changeBg()" class="btn btn-primary position-fixed top-0 end-0 m-3">
+        Đổi nền
+    </button>
+    <div id="content">
+        <div class="Fish" id="shark">
+            <img src="img/shark.png" class="img-fluid">
+        </div>
+        <div class="Fish" id="goldFish">
+            <img src="img/goldFishSchool.png" class="img-fluid">
+        </div>
+        <div class="Fish" id="goldFish_nguoclai">
+            <img src="img/goldFishSchool.png" class="img-fluid">
+        </div>
+        <div class="diver" id="diver_1">
+            <img src="img/diver1.png" class="img-fluid">
+        </div>
+        <div class="diver" id="diver_2">
+            <img src="img/diver2.png" class="img-fluid">
+        </div>
+        <div class="Fish" id="turtle">
+            <img src="img/turtle.png" class="img-fluid">
+        </div>
+        <div class="Fish" id="turtle_nguoclai">
+            <img src="img/turtle.png" class="img-fluid">
+        </div>
+    </div>
+</body>
+
+</html>

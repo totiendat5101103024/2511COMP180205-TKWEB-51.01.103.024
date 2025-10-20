@@ -1,0 +1,49 @@
+/* MA BAY QUA BAY LẠI */
+.ghost {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.ghost-left {
+    background-image: url('../img/Soul.ico');
+    top: 45%;
+    animation-name: fly-left-to-right;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.ghost-right {
+    background-image: url('../img/Witch.ico');
+    top: 25%;
+    transform: scaleX(-1);
+    animation-name: fly-right-to-left;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly-right-to-left {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes fly-left-to-right {
+    0% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}

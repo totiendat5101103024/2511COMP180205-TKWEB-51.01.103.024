@@ -1,0 +1,212 @@
+@media screen {
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    label {
+        color: white;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+
+    .product-container {
+        border-radius: 15px;
+        max-width: 300px;
+        height: 500px;
+        position: relative;
+        transition: all 0.3s ease;
+        margin: 0 auto;
+        /* Căn giữa card trong cột */
+        background-color: #ffffff;
+        /* Thêm màu nền cho card */
+    }
+
+    .product-container:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+        /* Thêm hiệu ứng nhấc lên */
+    }
+
+    .product-labels {
+        position: absolute;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        /* Dùng rem cho responsive */
+        padding: 5px 15px;
+        z-index: 1;
+        bottom: 200px;
+        right: 10px;
+    }
+
+    .product-img img {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 0;
+        /* Căn ảnh từ trên xuống */
+        transform: translateX(-50%);
+        border-radius: 10px;
+        /* padding: 20px; */
+        /* Thêm padding để ảnh không bị quá lớn */
+        box-sizing: border-box;
+    }
+
+    .product-detail {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 180px;
+        bottom: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .product-detail .price {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .product-detail .name a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        /* Dùng rem */
+        font-weight: 600;
+    }
+
+    .product-detail .name a:hover {
+        color: #F3C716;
+    }
+
+    .product-detail .option-container {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px 15px 15px;
+        box-sizing: border-box;
+    }
+
+    .product-detail .option-container button:hover {
+        background-color: #000000;
+        color: white;
+        border: black;
+    }
+
+    .page-footer {
+        /* padding: 2rem 1rem; */
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-social-icons {
+        margin-top: 20px;
+    }
+
+    .footer-social-icons i {
+        font-size: 35px;
+        color: white;
+        margin: 0 7px;
+    }
+
+    .footer-top {
+        height: auto;
+        padding: 2rem 0;
+        background: #161616;
+        border-bottom: 2px solid gray;
+    }
+
+    .footer-top .block {
+        margin: 15px;
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    .block-title {
+        margin: 5px 0px 15px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .block-title strong {
+        color: #FFFFFF;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .footer-middle {
+        height: auto;
+        padding: 2rem 0;
+        background: #161616;
+    }
+
+    .footer-middle img {
+        width: 300px;
+        margin-bottom: 12px;
+    }
+
+    .footer-middle-links-ul {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .footer-middle-links-ul li {
+        margin-bottom: 8px;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    .footer-middle-links-ul li a {
+        text-decoration: none;
+        color: #A8A8A8;
+    }
+
+    .footer-bottom {
+        background-color: #000000;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .footer-bottom-logos ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom-logos ul li {
+        padding: 0 20px;
+        align-self: center;
+        list-style: none;
+    }
+
+    .footer-bottom-logos ul li img {
+        width: 200px;
+        height: auto;
+    }
+
+    .footer-bottom-logos ul li img:hover {
+        opacity: .5;
+    }
+
+    .copyright {
+        display: block;
+        text-align: center;
+        padding: 8px;
+        background-color: #ccc;
+        box-shadow: inset 0px 2px 9px 0px rgba(0, 0, 0, .75);
+        color: #000;
+        font-size: 20px;
+    }
+}

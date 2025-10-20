@@ -1,0 +1,36 @@
+/* TRANG ĐĂNG KÝ */
+.form-select, .form-check-input {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #f0f0f0;
+}
+
+.form-select:focus, .form-check-input:focus {
+    border-color: #ff7518;
+    box-shadow: 0 0 10px rgba(255, 117, 24, 0.5);
+}
+
+.form-check-input:checked {
+    background-color: #ff7518;
+    border-color: #ff7518;
+}
+
+.form-check-label {
+    color: #f0f0f0;
+}
+
+.contact-form-wrapper .btn-submit-contact {
+    background-color: #ff7518;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form-wrapper .btn-submit-contact:hover {
+    background-color: #fff;
+    color: #ff7518;
+    transform: scale(1.05);
+}

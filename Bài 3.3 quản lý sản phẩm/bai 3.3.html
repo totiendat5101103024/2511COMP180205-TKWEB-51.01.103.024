@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body onload="showProduct()">
+
+    <div class="container mt-4">
+        <h2 class="mb-3">Thêm sản phẩm mới</h2>
+        <div class="p-3 bg-light border rounded" style="max-width: 500px;">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Tên sản phẩm" id="productName">
+                <button type="button" class="btn btn-primary" onclick="addProduct()">Thêm</button>
+            </div>
+        </div>
+
+        <h2 class="mt-5">Danh sách sản phẩm</h2>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th style="width: 100px;">Sửa</th>
+                    <th style="width: 100px;">Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="tableProduct">
+                </tbody>
+        </table>
+    </div>
+
+    <script>
+        let list = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6'];
+
+        function showProduct(editIndex = -1) {
+            let tableContent = '';
+
+            for (let i = 0; i < list.length; i++) {
+                if (i == editIndex) {
+                    tableContent += `
+                        <tr>
+                            <td>
+                                <input type="text" id="edit-input" class="form-control" value="${list[i]}">
+                            </td>
+                            <td><button class="btn btn-success btn-sm" onclick="saveProduct(${i})">Lưu</button></td>
+                            <td><button class="btn btn-secondary btn-sm" onclick="showProduct()">Hủy</button></td>
+                        </tr>
+                    `;
+                } else {
+                    tableContent += `
+                        <tr>
+                            <td>${list[i]}</td>
+                            <td><button class="btn btn-warning btn-sm" onclick="editProduct(${i})">Sửa</button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteProduct(${i})">Xóa</button></td>
+                        </tr>
+                    `;
+                }
+            }
+
+            document.getElementById('tableProduct').innerHTML = tableContent;
+        }
+
+        function addProduct() {
+            let newProductInput = document.getElementById('productName');
+            let newProduct = newProductInput.value;
+
+            if (newProduct.trim() !== '') {
+                list.push(newProduct); 
+                showProduct(); 
+                newProductInput.value = ''; 
+            } else {
+                alert('Vui lòng nhập tên sản phẩm.');
+            }
+        }
+
+        function deleteProduct(index) {
+            if (confirm(`Bạn có chắc muốn xóa "${list[index]}" không?`)) {
+                list.splice(index, 1); 
+                showProduct(); 
+            }
+        }
+
+
+        function editProduct(index) {
+            showProduct(index);
+        }
+
+        function saveProduct(index) {
+            const newValue = document.getElementById('edit-input').value;
+            
+            if (newValue.trim() !== '') {
+                list[index] = newValue; 
+                showProduct(); 
+            } else {
+                alert('Tên sản phẩm không được để trống.');
+            }
+        }
+    </script>
+
+</body>
+</html>

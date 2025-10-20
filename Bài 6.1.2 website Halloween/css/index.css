@@ -1,0 +1,46 @@
+.btn-read-more {
+    background-color: #ff7518;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn-read-more:hover {
+    background-color: #fff;
+    color: #ff7518;
+}
+
+/* DƠI LẮC LƯ */
+.shaking-bat {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    background-image: url('../img/Iconcreme-Halloween-Mummy.512.png     ');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: flutter-bat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutter-bat {
+    0%,
+    100% {
+        transform: rotate(5deg) translateY(0px);
+    }
+    25% {
+        transform: rotate(-10deg) translateY(-10px);
+    }
+    50% {
+        transform: rotate(10deg) translateY(5px);
+    }
+    75% {
+        transform: rotate(-5deg) translateY(-5px);
+    }
+}

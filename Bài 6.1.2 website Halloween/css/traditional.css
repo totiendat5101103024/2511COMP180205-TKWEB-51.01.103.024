@@ -1,0 +1,22 @@
+.tradition-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.tradition-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.tradition-card .card-body {
+    padding: 25px;
+}
+
+.tradition-card .card-title {
+    color: #ff7518;
+    font-weight: bold;
+}
